@@ -6,7 +6,7 @@ This project was done in collaboration with Liam Dehaudt at 42.
 ## Compiling and running
 Run `make`. An executable will compile. Currently only tested on OS X.
 
-Run with `./ants "Filename"`.
+Run with `./ants < Filename`.
 A collection of sample ant farms is included in `farms/` folder.
 
 ## Algorithm
