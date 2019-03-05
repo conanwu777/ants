@@ -1,6 +1,8 @@
 # ants
 This program takes a graph (rooms with un-directed connections) and computes the most efficient way to move N ants from source node to sink node, outputs an animated movement of the ants
 
+![alt text](https://github.com/conanwu777/ants/blob/master/ants_preview.gif)
+
 This project was done in collaboration with Liam Dehaudt at 42.
 
 ## Compiling and running
