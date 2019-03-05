@@ -12,7 +12,11 @@ Run with `./ants < Filename`.
 A collection of sample ant farms is included in `farms/` folder.
 
 ## Algorithm
-We re-formulated the problem into a mex-flow problem on a derived directed graph (with more vertices)to apply the Ford–Fulkerson algorithm. Project the resulting parallel paths to the origional network and resolve overlaps. Then we queue the ants in the resulting set of disjoint paths depending on the length of each path. The result garentees optimum solution as long as the number of ants is greater than the sum of lengths of paths from Ford–Fulkerson.
+We re-formulated the problem into a max-flow problem on a derived directed graph (we double all vertices and edges and form a larger graph) to apply the Ford–Fulkerson theorem. Project the resulting parallel paths to the original network and resolve overlaps. Then we queue the ants in the resulting set of disjoint paths depending on the length of each path. The result guarantees optimum solution as long as the number of ants is greater than the sum of lengths of paths from Ford–Fulkerson.
+
+A simple example where the flow solution would result in overlapping paths and resolving overlap was required and the queuing can be seen observed:
+
+![alt text](https://github.com/conanwu777/ants/blob/master/ants_preview2.gif)
 
 ## Steps
 * Store the rooms and connections into an undirected graph (Network)
